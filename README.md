@@ -1,1 +1,0 @@
-###### University project. Social network.
