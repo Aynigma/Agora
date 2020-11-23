@@ -1,21 +1,186 @@
-<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/post.css"/>
 
-<div style="box-sizing: border-box; display:block;"> 
+<div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);"> 
     <div class="tourniquer">
+        <div class="surDiapo1" onclick="myFunction()"></div>
+        <div class="surDiapo3" onclick="myFunction2()"></div>
+
         <div id="diapo1" class="diapo1">
-            <img class="dia" src="images/diapo1.png">
-        </div>
-        <div id="diapo2" class="diapo2">
-            <img class="dia" src="images/diapo2.png" alt="Second slide">
-        </div>
-        <div id="diapo3" class="diapo3">
-            <img class="dia" src="images/diapo3.png" alt="Third slide">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>Smug cat.</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Cat</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Photo</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/cat.jpg" width="360px" height="215px">
+                </div>
+                <p>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>NyanCam</b>
+                        <br>Photograph.
+                        <br>Always an eye in the lens.
+                    </span>
+                    <span style="float: right; padding-right: 10px;">
+                        1 million+ reactions
+                    </span>
+                </p>
+            </div>
         </div>
 
-    
-    </div>
-    <center><input onclick="myFunction()" style="margin : auto;"type="button" class="button" value="Input Button"></center>
+        <div id="diapo2" class="diapo2">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>Look at my tiny bonsai trees ! :)</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Plants</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Chill</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/bonsai.jpg" width="192px" height="125px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br>Took care of these little bois all by myself for 5 years now, <br>and I'm quite proud of how they've
+                    grown ! These are [...]
+                </div>
+                <p>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>IloveTrees2758</b>
+                        <br>Professional botanist.
+                        <br>Trees are my life !
+                    </span>
+                    <span style="float: right; padding-right: 10px;">
+                        <br>127 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="diapo3" class="diapo3">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>My Hollow Knight fan-art</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Art</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Drawing</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Game</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">OC</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/hollow_knight.jpg" width="200px" height="112px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br>I know it's not that good but it's my first time posting here, please don't be mean :(
+                </div>
+                <p><br>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>FluffyApple</b>
+                        <br>I like drawing and video games 
+                        <br>(｡ ・ω・｡)
+                    </span>
+                    <span style="float: right; padding-right: 10px;">
+                        <br>8046 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="diapo4" class="vide">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>A Book for Free Spirits, thoughts ?</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Philosophy</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Book</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Debate</button>
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    <br><br><br>So... I just read Nietzche's "Human, All Too Human", and I was wondering if lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Mauris sit amet consectetur turpis, nec lacinia magna. Integer
+                    condimentum risus at elit vehicula eleifend. Quisque viverra augue a sapien tempor, non gravida risus malesuada. Aenean
+                    suscipit pulvinar suscipit. Sed venenatis suscipit accumsan. Vivamus gravida gravida sapien, semper sagittis diam
+                    bibendum id. Nunc ligula dolor, dictum a eros a, ornare posuere odio. [...]<br><br><br> 
+                </div>
+                <p>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>Nihilist12</b>
+                        <br>Philosophy undergrad
+                        <br>"God is dead"
+                    </span>
+                    <span style="float: right;">
+                        <br>No reactions. Be the first to comment !
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="diapo5" class="vide">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>Protests breaking in front of the white house on election day</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Politics</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Photo</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/protests.png" width="428px" height="158px">
+                </div>
+                <p>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>Oregon2039</b>
+                        <br>US citizen
+                        <br>NYT field journalist 
+                    </span>
+                    <span style="float: right; padding-right: 10px;">
+                        14 replies
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <div id="diapo6" class="diapo6">
+            <div class="div_post" name="post" id="post">
+                <div class="title_post">
+                    <h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
+                </div>
+                <div class="post_tag">
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">News</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Actors</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Movies</button>
+                    <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Sci-Fi</button>
+                </div>
+                <div style="text-align: center;">
+                    <br><img src="images/roy.jpg" width="240px" height="135px">
+                </div>
+                <div style="text-align: center; font-size: small;">
+                    https://www.bbc.com/news/entertainment-arts-49098435
+                </div>
+                <p>
+                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                        <b>Cinemanautee</b>
+                        <br>Classic movies lover. 
+                        <br>Sci-Fi afficionado.
+                    </span>
+                    <span style="float: right; padding-right: 10px;">
+                        2019 reactions
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>    
 </div>
+
+
 
 
 <script type="text/javascript" src="js/main.js"></script>
