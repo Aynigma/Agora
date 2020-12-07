@@ -5,46 +5,19 @@
 }
 .tourniquer
 {
-  display: flex;
-  position: relative;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 1192px;
-  height: 465px;
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    width: 1192px;
+    height: 465px;
 }
 
-.surDiapo1
+.left_slide
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.surDiapo3
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.diapo1
-{
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     position: absolute;
@@ -64,7 +37,7 @@
 
 .vide
 {
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     position: absolute;
@@ -82,11 +55,10 @@
     filter: brightness(.9);
 }
 
-.diapo3
+.right_slide
 {
-  
-   box-sizing: border-box;
-     width: 845px;
+    box-sizing: border-box;
+    width: 845px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -102,9 +74,9 @@
     transition-delay: 0s;
     filter: brightness(.9);
 }
-.diapo2
+.mid_slide
 {
-   box-sizing: border-box;
+    box-sizing: border-box;
     width: 845px;
     height: 100%;
     opacity: 1;
@@ -112,122 +84,52 @@
     top: 0;
     left: 185px;
     transition: all 0.3s;
-      transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
     z-index: 2;
-        transition: all 0.3s;
+    transition: all 0.3s;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
-.diapo-vide
+.slide-vide
 {
     opacity: 0;
 }
-html 
+
+.arrow
 {
-    scroll-behavior: smooth
-}
-body
-{
-  background-color: #652030;
+    transform: scale(0.1);
+    display: block;
+    transition: 0.2s;
 }
 
-.commentaire
+.arrow-left
 {
-  display:block;
-  height: auto;
-  width: 1300px;
-  border: solid;
-  border-width: 1px;
-  border-color: #000;
-  margin : 5px;
-  padding: 2px;
-
+    position: absolute; left: 2em;
 }
 
-.commentaire2
+.arrow-left:hover
 {
-  display:block;
-  height: auto;
-  width: 1300px;
-  border: solid;
-  border-width: 1px;
-  border-color: #000;
-  margin : 5px;
-  padding: 2px;
-  margin-left: 100px;
-
+    transform: scale(0.12) translateX(-100px);
 }
 
-.photoDeProfil{
-	width:43px;
-  height:43px;
-  border-radius: 100px;
-  background:#000;
-display: inline-block;
-margin-top: 1px;
-margin-left: 4px;
+.arrow-left:active
+{
+    transform: scale(0.15) translateX(-150px);
 }
 
-.texte1
+.arrow-right
 {
-  font-family:Segeo Ui, sans-serif;
-   font-size:100%;
-   color: #707070; 
-   margin-top : -43px; 
-   margin-left: 60px;
-}
-.texte2
-{
-  margin-top : -10px; 
-  margin-left: 80px;
-  margin-right: 30px;
+    position: absolute; right: 2em;
 }
 
-.blocIcone
+.arrow-right:hover
 {
-display: block;
- margin-left:1150px;
- margin-bottom: 10px;
+    transform: scale(0.12) translateX(100px);
 }
 
-.haut
+.arrow-right:active
 {
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-}
-.bot
-{
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-}
-.neutral
-{
-  height: 40px;
-  width: 40px;
-   display: inline-block;
-}
-
-.post
-{
-  width: 100px;
-  height: 300px;
-  border-width: 1px;
-  border-color: #000;
-  margin : 5px;
-  padding: 2px;
-  background-color: #000;
-
-}
-
-.div_post
-{
-  margin-top: 1000px;
-}
-.hidehide
-{
-  visibility: hidden;
+    transform: scale(0.15) translateX(150px);
 }

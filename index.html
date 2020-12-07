@@ -5,18 +5,20 @@
 </header>
 
 <link rel="stylesheet" href="css/post.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/comment.css">
 <link rel='shortcut icon' type="image/png" href='./images/logo.png' />
 <script type="text/javascript" src="js/main.js"></script>
 
-<button  onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
+<p id="base"></p>
+<button onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
 
-<div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);"> 
+<div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);">
+    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="leftRotation()">
+    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="rightRotation()">
     <div class="tourniquer">
-        <div class="surDiapo1" onclick="myFunction()"></div>
-        <div class="surDiapo3" onclick="myFunction2()"></div>
-
-        <div id="diapo1" class="diapo1" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide1" class="left_slide" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Smug cat.</h1>
                 </div>
@@ -28,21 +30,21 @@
                 <div style="text-align: center;">
                     <br><img src="images/cat.jpg" width="360px" height="215px">
                 </div>
-                <p><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p>
+                    <span class="bio-mini">
                         <b>NyanCam</b>
                         <br>Photograph.
                         <br>Always an eye in the lens.
                     </span>
-                    <span style="float: right; padding-right: 10px;">
+                    <span class="reactions">
                         1 million+ reactions
                     </span>
                 </p>
             </div>
         </div>
 
-        <div id="diapo2" class="diapo2" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide2" class="mid_slide" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Look at my tiny bonsai trees ! :)</h1>
                 </div>
@@ -59,21 +61,21 @@
                     <br>Took care of these little bois all by myself for 5 years now, <br>and I'm quite proud of how topenArticle've
                     grown ! These are [...]
                 </div>
-                <p><br><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p>
+                    <span class="bio-mini">
                         <b>IloveTrees2758</b>
                         <br>Professional botanist.
                         <br>Trees are my life !
                     </span>
-                    <span style="float: right; padding-right: 10px;">
+                    <span class="reactions">
                         <br>127 reactions
                     </span>
                 </p>
             </div>
         </div>
 
-        <div id="diapo3" class="diapo3" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide3" class="right_slide" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>My Hollow Knight fan-art</h1>
                 </div>
@@ -89,21 +91,21 @@
                 <div style="text-align: center; font-size: small;">
                     <br>I know it's not that good but it's my first time posting here, please don't be mean :(
                 </div>
-                <p><br><br><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p><br>
+                    <span class="bio-mini">
                         <b>FluffyApple</b>
                         <br>I like drawing and video games 
                         <br>(｡ ・ω・｡)
                     </span>
-                    <span style="float: right; padding-right: 10px;">
+                    <span class="reactions">
                         <br>8046 reactions
                     </span>
                 </p>
             </div>
         </div>
 
-        <div id="diapo4" class="vide" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide4" class="vide" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>A Book for Free Spirits, thoughts ?</h1>
                 </div>
@@ -119,21 +121,21 @@
                     suscipit pulvinar suscipit. Sed venenatis suscipit accumsan. Vivamus gravida gravida sapien, semper sagittis diam
                     bibendum id. Nunc ligula dolor, dictum a eros a, ornare posuere odio. [...]<br><br><br> 
                 </div>
-                <p><br><br><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p>
+                    <span class="bio-mini">
                         <b>Nihilist12</b>
                         <br>Philosophy undergrad
                         <br>"God is dead"
                     </span>
-                    <span style="float: right;">
+                    <span style="float: left;">
                         <br>No reactions. Be the first to comment !
                     </span>
                 </p>
             </div>
         </div>
 
-        <div id="diapo5" class="vide" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide5" class="vide" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Protests breaking in front of the white house on election day</h1>
                 </div>
@@ -144,21 +146,21 @@
                 <div style="text-align: center;">
                     <br><img src="images/protests.png" width="428px" height="158px">
                 </div>
-                <p><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p>
+                    <span class="bio-mini">
                         <b>Oregon2039</b>
                         <br>US citizen
                         <br>NYT field journalist 
                     </span>
-                    <span style="float: right; padding-right: 10px;">
+                    <span class="reactions">
                         14 replies
                     </span>
                 </p>
             </div>
         </div>
 
-        <div id="diapo6" class="diapo6" onclick="openArticle()">
-            <div class="div_post" name="post" id="post">
+        <div id="slide6" class="diapo6" onclick="openArticle()">
+            <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
                     <h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
                 </div>
@@ -174,26 +176,26 @@
                 <div style="text-align: center; font-size: small;">
                     https://www.bbc.com/news/entertainment-arts-49098435
                 </div>
-                <p><br>
-                    <span style="float: left; padding: 5px; background-color: #89435f; border-radius: 5px;">
+                <p>
+                    <span class="bio-mini">
                         <b>Cinemanautee</b>
                         <br>Classic movies lover. 
                         <br>Sci-Fi afficionado.
                     </span>
-                    <span style="float: right; padding-right: 10px;">
+                    <span class="reactions">
                         2019 reactions
                     </span>
                 </p>
             </div>
         </div>
-    </div>    
+    </div>   
 </div>
 
 
     <div class="div_post divRo" name="post" id="postPost">
         <img style="float:right" src="images/close2.png" onclick="closeArticle()">
         <div name="post" id="post" class="div_post_section">
-            <div id="#title" class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
+            <div id="top" class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
             <div class="post_tag">
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
@@ -214,19 +216,19 @@
                 Tincidunt id aliquet risus feugiat in ante. Eget egestas purus viverra accumsan. Feugiat vivamus at augue eget arcu dictum varius duis. Est placerat in egestas erat imperdiet sed euismod nisi. Leo duis ut diam quam nulla porttitor massa id. Et magnis dis parturient montes nascetur ridiculus mus mauris vitae. Sed felis eget velit aliquet sagittis id consectetur. Et malesuada fames ac turpis egestas. Massa tincidunt dui ut ornare lectus sit. Dignissim cras tincidunt lobortis feugiat vivamus. Aliquet bibendum enim facilisis gravida. Sit amet nulla facilisi morbi tempus iaculis. Sollicitudin aliquam ultrices sagittis orci. Libero enim sed faucibus turpis in eu mi bibendum neque. Et magnis dis parturient montes nascetur. Ipsum dolor sit amet consectetur adipiscing elit. Ac auctor augue mauris augue neque gravida in. Ac orci phasellus egestas tellus rutrum tellus pellentesque.
                 Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Habitant morbi tristique senectus et netus et malesuada fames. Eget duis at tellus at urna. Suspendisse sed nisi lacus sed viverra tellus. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Egestas erat imperdiet sed euismod. Lacus sed turpis tincidunt id. Neque viverra justo nec ultrices dui sapien eget mi. Massa tempor nec feugiat nisl. Sapien eget mi proin sed libero enim sed faucibus turpis. Eget duis at tellus at. Nibh ipsum consequat nisl vel pretium. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. At erat pellentesque adipiscing commodo. Velit euismod in pellentesque massa placerat duis ultricies lacus sed. Nisl purus in mollis nunc sed id semper risus. Quis hendrerit dolor magna eget est. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Pellentesque id nibh tortor id aliquet.</h4>
             </div>
+            <div class="div_user_section">
+            
+                <div class="name_user">
+            
+                </div>
+                <div class="bio_user">
+                    <h1>IloveTrees2758</h1>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn_follow">Follow</button>
+            </div>
             <div class="post_reply">
             <p>127 reactions</p>
             </div>
-        </div>
-        <div class="div_user_section">
-        
-            <div class="name_user">
-                
-            </div>
-            <div class="bio_user">
-                <h1>IloveTrees2758</h1>
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn_follow">Follow</button>
         </div>
     <div class="div_comment_section">
         <div class="comment">
@@ -336,12 +338,35 @@
 </div>
 
 <div id="openComment" class="hidehide">
-    <img style="float:right" src="images/close2.png" onclick="closeComment()">
-    <center><h1>Comment : </h1></center>
+    <a onclick="closeComment(); "><img style="float:right" src="images/close2.png"></a>
+    <center>
+        <h1>Comment : </h1>
+    </center>
     <br>
     <center><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></center>
     <br>
-    <center><button class="btn btn-primary btn-lg">Envoyer</button></center>
+
+    <center>
+        <button class="reaction bas"></button>
+        <button class="reaction neutre"></button>
+        <button class="reaction haut"></button>
+
+        <br>
+        <br>
+        <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
+        <br>
+        <br>
+        <div class="parent-div click">
+            <button class="btn-upload click">Choisir un fichier</button>
+            <input type="file" name="upfile">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-primary btn-lg">Envoyer</button>
+        <br>
+    </center>
 </div>
 
 

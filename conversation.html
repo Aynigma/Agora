@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+    <title>Conversation</title>
+    <meta charset='UTF-8' />
+    <link rel='stylesheet' type="text/css" href='css/conversation.css' />
+    <link rel='stylesheet' type="text/css" href='css/bootstrap/bootstrap.css' />
+    <link rel='shortcut icon' type="image/png" href='./images/logo.png' />
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+         <div class="block">
+            <div class="row">
+                <div class="col-3">
+                    <div class="left">
+                        <div class="top-left">
+                            <p class="title">clement_cvl</p> <img style ="float:right; margin-top:25px; margin-right:8px;" src="https://img.icons8.com/windows/48/000000/communication.png"/> 
+                        </div>
+
+                        <div class="nav-friend" >
+                            <br>
+                            <center><input placeholder="Chercher un ami" class="recherche"></center>
+
+                            <br>
+                            <div class="test" id="changeFontThomas" onclick="affichage('convThomas')">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="picture-icone-1"></div>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="title2">Thomas</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="test"  id="changeFontMalory" onclick="affichage('convMalory')">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="picture-icone-2"></div>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="title2">Malo</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-9" id="base">
+                    <div class="right">
+                        <div class="top-right2">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+
+                        </div>
+                        <center>
+                            <h3>Cliquer sur un ami(e) pour lancer la conversation</h3>
+                            <img src="https://img.icons8.com/windows/192/000000/communication.png"/> 
+                        </center>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-9" id="convThomas">
+                    <div class="right">
+                        <div class="top-right">
+                            <div class="into-top-right">
+                                <br>
+                                <center>
+                                            <div class="picture-top-right" id="imageUser1"></div>
+                                            <p class="title2" id="nomUtilisateur1">clement_cvl</p>
+                                </center>
+                          
+                            </div>
+                        </div>
+
+                        <div class="bottom-right">
+                            <div class="container color-font-discussion">
+                                <img class="picture-icone-1"></img>
+                                <p>Hello. How are you today?</p>
+                                <span class="time-right">11:00</span>
+                              </div>
+                              
+                              <div class="container darker">
+                                <img class="picture-icone-3" style="float:right"></img>
+                                <p>Hey! I'm fine. Thanks for asking!</p>
+                                <span class="time-left">11:01</span>
+                              </div>
+                              
+                              <div class="container color-font-discussion">
+                                <img class="picture-icone-1"></img>
+                                <p>Sweet! So, what do you wanna do today?</p>
+                                <span class="time-right">11:02</span>
+                              </div>
+                              
+                              <div class="container darker">
+                                <img class="picture-icone-3" style="float:right"></img>
+                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                                <span class="time-left">11:05</span>
+                              </div>
+                              <div class="container darker">
+                                <img class="picture-icone-3" style="float:right"></img>
+                                <p>Hey! I'm fine. Thanks for asking!</p>
+                                <span class="time-left">11:01</span>
+                              </div>
+                              
+                              <div class="container color-font-discussion">
+                                <img class="picture-icone-1"></img>
+                                <p>Sweet! So, what do you wanna do today?</p>
+                                <span class="time-right">11:02</span>
+                              </div>
+                              
+                              <div class="container darker">
+                                <img class="picture-icone-3" style="float:right"></img>
+                                <p>Nah, I dunno. Play soccer.. or learn more coding perhaps?</p>
+                                <span class="time-left">11:05</span>
+                              </div>
+
+                              <textarea style="resize: none;width: 720px; height:290px;"></textarea>
+                              
+                              <center><button type="button" class="boutonSub">Send</button></center>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+                <div class="col-9" id="convMalory">
+                    <div class="right">
+                        <div class="top-right">
+                            <div class="into-top-right">
+                                <br>
+                                <center>
+                                            <div class="picture-top-right" id="imageUser2"></div>
+                                            <p class="title2" id="nomUtilisateur2">clement_cvl</p>
+                                </center>
+                          
+                            </div>
+                        </div>
+
+                        <div class="bottom-right">
+                            <div class="container color-font-discussion">
+                                <img class="picture-icone-2"></img>
+                                <p>Hey bro how are you?</p>
+                                <span class="time-right">11:00</span>
+                              </div>
+                              
+                              <div class="container darker">
+                                <img class="picture-icone-3" style="float:right"></img>
+                                <p>I don't now, my girlfriend broke up whith me</p>
+                                <span class="time-left">11:01</span>
+                              </div>
+                              
+                              <div class="container color-font-discussion">
+                                <img class="picture-icone-2"></img>
+                                <p>How it's so sad but : one lost, ten found. </p>
+                                <span class="time-right">11:02</span>
+                              </div>
+                              
+
+
+                              <textarea></textarea>
+                              <center><button type="btn_primary" class="boutonSub">Send</button></center>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+   
+</body>
+
+<footer>
+
+</footer>

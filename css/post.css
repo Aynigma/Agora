@@ -1,128 +1,25 @@
-.ensembleTourniquer
+
+
+.reactions
 {
-    box-sizing: border-box;
-    display: block;
-}
-.tourniquer
-{
-  display: flex;
-  position: relative;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
-  width: 1192px;
-  height: 465px;
+    float: left; 
+    padding-right: 10px;
 }
 
-.surDiapo1
+.bio-mini
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.surDiapo3
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 2;
-}
-.diapo1
-{
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 1;
-    z-index: 1;
-    transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
+    float: right;
+    display: block; 
+    padding: 5px; 
+    background-color: #89435f; 
+    border-radius: 5px;
+    transition: all 0.5s;
 }
 
-.vide
+.bio-mini:hover
 {
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-    transform: translate3d(-237px, 0, 0) scale(0.87);
-    opacity: 0;
-    z-index: 1;
-    transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
-}
-
-.diapo3
-{
-  
-   box-sizing: border-box;
-     width: 845px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-        transform: translate3d(237px, 0, 0) scale(0.87);
-    opacity: 1;
-    z-index: 1;
-        transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    filter: brightness(.9);
-}
-.diapo2
-{
-   box-sizing: border-box;
-    width: 845px;
-    height: 100%;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 185px;
-    transition: all 0.3s;
-      transform: translate3d(0, 0, 0) scale(1);
-    z-index: 2;
-        transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-.diapo-vide
-{
-    opacity: 0;
+    
+    transform: scale(1.2);
 }
 
 body {
@@ -164,6 +61,23 @@ p{
     height: 90%;
     border-radius: 10px;
 }
+
+.div_post_mini
+{
+    transition: 1s;
+}
+
+.div_post_mini:hover
+{
+    transform: translate(-50%, -40%) scale(1.2);
+}
+
+.div_post_mini:active
+{
+    transition: 0.5s;
+    transform: translate(-50%, -30%) scale(1.5);
+}
+
 .divRo 
 {
     visibility : hidden;
