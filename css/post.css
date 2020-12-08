@@ -18,7 +18,6 @@
 
 body {
     background-color: #652030;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1 {
@@ -54,8 +53,8 @@ p {
     display: grid;
     width: 90%;
     height: 90%;
-    grid-template-columns: auto 30% 100px;
-    grid-template-rows: 150px auto 100px;
+    grid-template-columns: auto 30% 50px;
+    grid-template-rows: 150px auto 150px;
     row-gap: 10px;
     column-gap: 10px;
     padding: 5px;
@@ -68,6 +67,7 @@ p {
     color: white;
     width: 90%;
     height: 90%;
+    border-radius: 5px;
 }
 
 .div_post_mini:hover {
@@ -116,6 +116,7 @@ p {
 }
 
 .div_user_section {
+    position: relative;
     background-color: #834141;
     grid-row: 1/2;
     grid-column: 2/3;
@@ -141,13 +142,14 @@ p {
 }
 
 .btn_follow {
-    right: 5%;
-    bottom: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .div_comment_section {
     background-color: #834141;
-    grid-row: 2/3;
+    grid-row: 2/4;
     grid-column: 2/4;
     right: 2%;
     top: 15%;
@@ -175,11 +177,14 @@ p {
     -webkit-line-clamp: 1;
     /* number of lines to show */
     -webkit-box-orient: vertical;
-    overflow: hidden;
+    overflow: scroll;
+}
+
+.content_comment::-webkit-scrollbar {
+    display: none;
 }
 
 .btn {
-    display: inline-block;
     font-weight: 400;
     color: #212529;
     text-align: center;
@@ -194,6 +199,7 @@ p {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0.25rem;
+    height: 50px;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -224,10 +230,10 @@ p {
 }
 
 .btn_position {
-    grid-row: 3/3;
-    grid-column: 2/3;
-    bottom: 3%;
-    right: 10%;
+    grid-row: 4/4;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn-primary {
