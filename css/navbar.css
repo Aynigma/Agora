@@ -28,6 +28,10 @@ a.navbar-brand>h1 {
     left: -50px;
 }
 
+nav>form {
+    margin-bottom: 0px;
+}
+
 
 /**Search Box**/
 
@@ -58,4 +62,13 @@ a.navbar-brand>h1 {
 .search-box ul li a:hover:not(.header) {
     background-color: grey;
     font-size: 19pt;
+}
+
+nav>form>.btn {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+nav>form>.btn:hover {
+    color: white
 }
