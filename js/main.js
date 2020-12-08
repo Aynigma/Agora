@@ -18,7 +18,7 @@ function update_number_div(nb)
     variable_fix = nb-1;
 }
 
-function right_rotation()
+function left_rotation()
 {
   variable = variable + 1;
 
@@ -84,7 +84,7 @@ function right_rotation()
 //boucle pour alle vers la gauche
 
 
-function left_rotation()
+function right_rotation()
 {
   variable = variable - variable_second_function;
 
