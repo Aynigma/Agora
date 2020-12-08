@@ -33,13 +33,15 @@
         </a>
 
 
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
 
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;" onfocus="showsearch()" onfocusout="hidesearch()">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                style="width: 400px;" onfocus="showsearch()" onfocusout="hidesearch()">
             <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
         </form>
 
@@ -47,7 +49,8 @@
 
             <form class="navbar-form form-inline " form_signature="16474143355621859656 ">
                 <div class="input-group search-box ">
-                    <input type="text " id="search " class="form-control " placeholder="Search here... " field_signature="4273170279 " form_signature="16474143355621859656 ">
+                    <input type="text " id="search " class="form-control " placeholder="Search here... "
+                        field_signature="4273170279 " form_signature="16474143355621859656 ">
                     <span class="input-group-addon "><i class="material-icons "></i></span>
                 </div>
             </form>
@@ -78,7 +81,8 @@
                     </li>
                 </ul>
                 <div class="nav-item dropdown">
-                    <a href="# " data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action " aria-expanded="false "><i class="fa fa-user-o "> Account</i> <b class="caret "></b></a>
+                    <a href="# " data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action "
+                        aria-expanded="false "><i class="fa fa-user-o "> Account</i> <b class="caret "></b></a>
                     <div class="dropdown-menu ">
                         <a href="settings.html " class="dropdown-item "><i class="fa fa-sliders "></i> Settings</a>
                         <div class="divider dropdown-divider "></div>
@@ -99,8 +103,8 @@
     </div>
 
 
-<div class="test">
-         <div class="bio">
+    <div class="test">
+        <div class="bio">
             <div class="row">
                 <div class="col-4">
                     <div class="picture-other"></div>
@@ -111,77 +115,87 @@
                     <a>I like skateboard and league of legend and you ? </a> <br>
                     <a>Play with me one day ;)</a>
                     <br><br>
-                    <button id="button-follow" class="btn-follow" type"button" onclick="change_follow_to_unfollow()">Follow</button>
+                    <button class="btn-follow" type"button">
+                        <a href="conversation.html"></a>
+                        Message
+                    </button>
+                    <button id="button-follow" class="btn-follow" type"button"
+                        onclick="change_follow_to_unfollow()">Follow</button>
+                    <button id="modal" style="visibility: hidden" type="button" class="btn-follow" data-toggle="modal"
+                        data-target="#myModal">Open Modal</button>
+                        
                 </div>
             </div>
         </div>
-</div>
-   
+    </div>
 
+    <br>
     <center>
         <div class="container">
-        <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-    
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-    
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="custom-search"></div>
-                        <input class="form-control" type="text" placeholder="Default input" oninput="dislikeTagFromPeople()"
-                            id="inputTag">
-                        <div id="listTags">
-                            <h3>This is the list of tags :</h3>
+            <!-- Trigger the modal with a button -->
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal Header</h4>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <div class="modal-body">
+                            <div class="custom-search"></div>
+                            <input class="form-control" type="text" placeholder="Default input"
+                                oninput="dislikeTagFromPeople()" id="inputTag">
+                            <div id="listTags">
+                                <h3>This is the list of tags :</h3>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
+
                     </div>
-    
                 </div>
             </div>
-        </div>
-        <div class="inside">
-        <div class="inside">
-            <a class="subtitle">Publications : 3 </a>
-            <a class="subtitle2">Follower : 12</a>
-            <a class="subtitle2">Follow : 280</a>
-            <p style="color : #c4c4c4;">______________________________________________________________________________________________________</p>
-            <h1 style="color : #c4c4c4;">Post</h1>
-            <br>
-            <div class="post">
-                <h1>League of Stats</h1>
-                <div class="overlay">
-                    <p>Stat League Of Legend</p>
-                </div> 
-            </div>
-    
-            <div class="post">
-                <h1>Skate Life</h1>
-                <div class="overlay">
-                    <div class="in_overlay">
-                        <p>My best skateboard trick</p>
+            <div class="inside">
+                <div class="inside">
+                    <a class="subtitle">Publications : 3 </a>
+                    <a class="subtitle2">Follower : 12</a>
+                    <a class="subtitle2">Follow : 280</a>
+                    <p style="color : #c4c4c4;">
+                        ______________________________________________________________________________________________________
+                    </p>
+                    <h1 style="color : #c4c4c4;">Post</h1>
+                    <br>
+                    <div class="post">
+                        <h1>League of Stats</h1>
+                        <div class="overlay">
+                            <p>Stat League Of Legend</p>
+                        </div>
                     </div>
-                </div> 
-            </div>
-    
-            <div class="post">
-                <h1>Presentation</h1>
-                <div class="overlay">
-                    <div class="in_overlay">
-                        <p>Hey I'm tony</p>
+
+                    <div class="post">
+                        <h1>Skate Life</h1>
+                        <div class="overlay">
+                            <div class="in_overlay">
+                                <p>My best skateboard trick</p>
+                            </div>
+                        </div>
                     </div>
-                </div> 
-            </div>
-            
-        </div>
+
+                    <div class="post">
+                        <h1>Presentation</h1>
+                        <div class="overlay">
+                            <div class="in_overlay">
+                                <p>Hey I'm tony</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
     </center>
 
 
