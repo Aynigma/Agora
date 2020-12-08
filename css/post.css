@@ -1,24 +1,18 @@
-
-
-.reactions
-{
-    float: left; 
+.reactions {
+    float: left;
     padding-right: 10px;
 }
 
-.bio-mini
-{
+.bio-mini {
     float: right;
-    display: block; 
-    padding: 5px; 
-    background-color: #89435f; 
+    display: block;
+    padding: 5px;
+    background-color: #89435f;
     border-radius: 5px;
     transition: all 0.5s;
 }
 
-.bio-mini:hover
-{
-    
+.bio-mini:hover {
     transform: scale(1.2);
 }
 
@@ -27,95 +21,108 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h1{
+h1 {
     color: white;
     text-align: center;
 }
 
-h3{
+h3 {
     font-size: 16pt;
 }
 
-h4{
+h4 {
     padding: 30px;
 }
 
-h5{
+h5 {
     padding-left: 15px;
 }
 
-p{
+p {
     margin: 7px;
     padding: 15px;
 }
 
-
 .div_post {
     color: white;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #722E37;
-    width: 80%;
+    border-radius: 10px;
+    display: grid;
+    width: 90%;
     height: 90%;
-    border-radius: 10px;
+    grid-template-columns: auto 30% 100px;
+    grid-template-rows: 150px auto 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5px;
+    margin-bottom: 150px;
 }
 
-.div_post_mini
-{
+.div_post_mini {
+    background-color: #722E37;
     transition: 1s;
+    color: white;
+    width: 90%;
+    height: 90%;
 }
 
-.div_post_mini:hover
-{
-    transform: translate(-50%, -40%) scale(1.2);
+.div_post_mini:hover {
+    transform: translate(0%, 40%) scale(1.1);
 }
 
-.div_post_mini:active
-{
+.div_post_mini:active {
     transition: 0.5s;
-    transform: translate(-50%, -30%) scale(1.5);
+    transform: translate(0, 40%) scale(1.2);
 }
 
-.divRo 
-{
-    visibility : hidden;
-    margin-top:700px;
+.divRo {
+    visibility: hidden;
+    margin-top: 700px;
 }
+
 .div_post_section {
+    grid-row: 1/4;
+    grid-column: 1/2;
     background-color: #834141;
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    left: 0%;
     border-radius: 10px;
+    overflow: scroll;
 }
-.content_post{
+
+.div_post_section::-webkit-scrollbar {
+    display: none;
+}
+
+.content_post {
     width: 100%;
     height: 80%;
     overflow: scroll;
     text-align: justify;
 }
-.post_tag{
+
+.post_tag {
     text-align: center;
 }
-.post_reply{
+
+.post_reply {
     text-align: right;
 }
+
 .content_post::-webkit-scrollbar {
     display: none;
 }
+
 .div_user_section {
     background-color: #834141;
-    position: absolute;
-    width: 35%;
-    height: 10%;
-    right: 4%;
-    top: 2%;
+    grid-row: 1/2;
+    grid-column: 2/3;
     border-radius: 10px;
 }
-.name_user{
+
+.name_user {
     position: absolute;
     width: 20%;
     height: 100%;
@@ -128,24 +135,20 @@ p{
     content: url(../images/profile.jpg);
 } */
 
-.bio_user{
-    position: absolute;
+.bio_user {
     left: 25%;
-    width: 50%;
     height: auto;
 }
 
-.btn_follow{
-    position: absolute;
+.btn_follow {
     right: 5%;
-    bottom:30%;
+    bottom: 30%;
 }
 
 .div_comment_section {
     background-color: #834141;
-    position: absolute;
-    width: 35%;
-    height: 75%;
+    grid-row: 2/3;
+    grid-column: 2/4;
     right: 2%;
     top: 15%;
     overflow: scroll;
@@ -155,23 +158,25 @@ p{
 .div_comment_section::-webkit-scrollbar {
     display: none;
 }
+
 .comment {
     border: solid #5a2727 5px;
     margin: 5px;
     border-radius: 7px;
 }
-.title_comment{
+
+.title_comment {
     text-align: center;
 }
 
-.content_comment{
+.content_comment {
     text-align: justify;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
 
 .btn {
     display: inline-block;
@@ -191,6 +196,7 @@ p{
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
     .btn {
         transition: none;
@@ -202,23 +208,28 @@ p{
     text-decoration: none;
 }
 
-.btn:focus, .btn.focus {
+.btn:focus,
+.btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled, .btn:disabled {
+.btn.disabled,
+.btn:disabled {
     opacity: 0.65;
 }
 
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
 }
-.btn_position{
-    position: absolute;
-    bottom : 3%;
+
+.btn_position {
+    grid-row: 3/3;
+    grid-column: 2/3;
+    bottom: 3%;
     right: 10%;
 }
+
 .btn-primary {
     color: #fff;
     background-color: #5d1c1c;
@@ -231,13 +242,16 @@ p{
     border-color: #991010;
 }
 
-.btn-primary:focus, .btn-primary.focus {
+.btn-primary:focus,
+.btn-primary.focus {
     color: #fff;
     background-color: #991010;
     border-color: #991010;
     box-shadow: 0 0 0 0.2rem #991010;
 }
-.btn-lg, .btn-group-lg > .btn {
+
+.btn-lg,
+.btn-group-lg>.btn {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
@@ -262,6 +276,7 @@ p{
     border-radius: 0.25rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 @media (prefers-reduced-motion: reduce) {
     .btn {
         transition: none;
@@ -273,12 +288,14 @@ p{
     text-decoration: none;
 }
 
-.btn_tag:focus, .btn.focus {
+.btn_tag:focus,
+.btn.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn_tag.disabled, .btn:disabled {
+.btn_tag.disabled,
+.btn:disabled {
     opacity: 0.65;
 }
 
@@ -298,24 +315,24 @@ p{
     border-color: #991010;
 }
 
-.btn_tag-primary:focus, .btn-primary.focus {
+.btn_tag-primary:focus,
+.btn-primary.focus {
     color: #fff;
     background-color: #991010;
     border-color: #991010;
     box-shadow: 0 0 0 0.2rem #991010;
 }
-.btn_tag-lg, .btn-group-lg > .btn_tag {
+
+.btn_tag-lg,
+.btn-group-lg>.btn_tag {
     padding: 0.25rem 0.5rem;
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: 0.3rem;
 }
 
-
 textarea {
     resize: none;
-    height:80%;
+    height: 80%;
     width: 80%;
-  }
-
-  
+}
