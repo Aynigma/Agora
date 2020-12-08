@@ -15,6 +15,22 @@ textarea:focus
     border: 3px solid #3f131d;
 }
 
+.comment_hide
+{
+    visibility: hidden;
+    margin-top:1520px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #722E37;
+        width: 1200px;
+        height: 650px;
+        border-radius: 10px;
+        padding: 10px;
+}
+
 .reaction
 {
     display: inline-block;
@@ -27,44 +43,43 @@ textarea:focus
     cursor: pointer;
 }
 
-.class
 
-.haut
+.good-reaction
 {
     background: url("../images/haut.png");
     background-size: 50px;
     border:0px;
     transition: 0.2s;
 }
-.bas
+.bad-reaction
 {
     background: url("../images/bas.png");
     background-size: 50px;
     border:0px;
     transition: 0.2s;
 }
-.neutre
+.neutral-reaction
 {
     background: url("../images/neutre.png");
     background-size: 50px;
     border:0px;
     transition: 0.2s;
 }
-.haut:focus
+.good-reaction:focus
 {
     background: url("../images/hautActif.png");
     background-size: 50px;
     border:0px;
     outline: 0;
 }
-.bas:focus
+.bad-reaction:focus
 {
     background: url("../images/basActif.png");
     background-size: 50px;
     border:0px;
     outline: 0;
 }
-.neutre:focus
+.neutral-reaction:focus
 {
     background: url("../images/neutreActif.png");
     background-size: 50px;
@@ -117,4 +132,10 @@ textarea:focus
 {
     transform: scale(1.2);
 }
+
+textarea {
+    resize: none;
+    height:80%;
+    width: 80%;
+  }
 

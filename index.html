@@ -1,26 +1,120 @@
-<header>
-    <title>
-        Agora
-    </title>
-</header>
+<head>
+
+<script type="text/javascript" src="js/main.js"></script>
+<link rel='shortcut icon' type="image/png" href='./images/logo.png' />
+<link rel='shortcut icon' href='./images/logo.png' />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel='stylesheet' type="text/css" href='css/bootstrap/bootstrap.css' />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/tags.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap/bootstrap.css" />
+<script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="js/inputTag.js"></script>
 
 <link rel="stylesheet" href="css/post.css"/>
 <link rel="stylesheet" href="css/main.css"/>
 <link rel="stylesheet" href="css/comment.css">
-<link rel='shortcut icon' type="image/png" href='./images/logo.png' />
-<script type="text/javascript" src="js/main.js"></script>
+
+<link rel='stylesheet' href='./css/navbar.css' />
+<script src="js/scriptNavBar.js"> </script>
+
+</head>
+
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+    <a href="./index.html" class="navbar-brand">
+        <img src="./images/logo.png" width="45" height="45" alt="" />
+        <h1 style="display: inline; vertical-align: middle;">Agora</h1>
+    </a>
+
+
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width: 400px;" onfocus="showsearch()" onfocusout="hidesearch()">
+        <button class=" btn btn-outline-success my-2 my-sm-0 " type="submit ">Search</button>
+    </form>
+
+    <div id="navbarCollapse " class="navbar-collapse justify-content-start collapse">
+
+        <form class="navbar-form form-inline " form_signature="16474143355621859656 ">
+            <div class="input-group search-box ">
+                <input type="text " id="search " class="form-control " placeholder="Search here... " field_signature="4273170279 " form_signature="16474143355621859656 ">
+                <span class="input-group-addon "><i class="material-icons "></i></span>
+            </div>
+        </form>
+
+
+
+
+        <div class="navbar-nav ml-auto ">
+            <ul class="nav navbar-nav navbar-right ">
+
+                <li class="nav-item ">
+                    <a class="nav-link " href="conversation.html ">
+                        <i class="fa fa-envelope "></i> Messages</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="tags.html">
+                        <i class="fa fa-tags "></i> Tags
+
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="signet.html ">
+                        <i class="fa fa-bookmark "></i> Saved</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="profil.html ">
+                        <i class="fa fa-user-o "></i> Profile</a>
+                </li>
+            </ul>
+            <div class="nav-item dropdown">
+                <a href="# " data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action " aria-expanded="false "><i class="fa fa-user-o "> Account</i> <b class="caret "></b></a>
+                <div class="dropdown-menu ">
+                    <a href="settings.html " class="dropdown-item "><i class="fa fa-sliders "></i> Settings</a>
+                    <div class="divider dropdown-divider "></div>
+                    <a href="register.html" class="dropdown-item "><i class="fa fa-sign-out "></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="search-box-div" class="search-box">
+    <ul>
+        <li><a href="otherUser.html">User 1</a></li>
+        <li><a href="#">User 2</a></li>
+
+        <li><a href="#">User 3</a></li>
+    </ul>
+</div>
+
 
 <p id="base"></p>
-<button onclick="redirection()" style="float:right" class="btn btn-primary btn-lg">Register</button>
 
 <div style="box-sizing: border-box; display:block; position: relative; transform: translateY(35%);">
-    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="leftRotation()">
-    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="rightRotation()">
+
+    <img src="images/arrow_left.png" class="arrow arrow-left" onclick="left_rotation()" >
+    <img src="images/arrow_right.png" class="arrow arrow-right" onclick="right_rotation()">
+
     <div class="tourniquer">
-        <div id="slide1" class="left_slide" onclick="openArticle()">
+        <div id="slide1" class="left-slide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>Smug cat.</h1>
+                    <br><h1>Smug cat.</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Cat</button>
@@ -43,10 +137,10 @@
             </div>
         </div>
 
-        <div id="slide2" class="mid_slide" onclick="openArticle()">
+        <div id="slide2" class="mid-slide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>Look at my tiny bonsai trees ! :)</h1>
+                    <br><h1>Look at my tiny bonsai trees ! :)</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
@@ -74,10 +168,10 @@
             </div>
         </div>
 
-        <div id="slide3" class="right_slide" onclick="openArticle()">
+        <div id="slide3" class="right-slide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>My Hollow Knight fan-art</h1>
+                    <br><h1>My Hollow Knight fan-art</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Art</button>
@@ -104,10 +198,10 @@
             </div>
         </div>
 
-        <div id="slide4" class="vide" onclick="openArticle()">
+        <div id="slide4" class="vide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>A Book for Free Spirits, thoughts ?</h1>
+                    <br><h1>A Book for Free Spirits, thoughts ?</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Philosophy</button>
@@ -134,10 +228,10 @@
             </div>
         </div>
 
-        <div id="slide5" class="vide" onclick="openArticle()">
+        <div id="slide5" class="vide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>Protests breaking in front of the white house on election day</h1>
+                    <br><h1>Protests breaking in front of the white house on election day</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Politics</button>
@@ -159,10 +253,10 @@
             </div>
         </div>
 
-        <div id="slide6" class="diapo6" onclick="openArticle()">
+        <div id="slide6" class="vide" onclick="open_article()">
             <div class="div_post div_post_mini" name="post" id="post">
                 <div class="title_post">
-                    <h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
+                    <br><h1>Actor Rutger Hauer (Blade Runner 1982) dies at 75</h1>
                 </div>
                 <div class="post_tag">
                     <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">News</button>
@@ -192,10 +286,11 @@
 </div>
 
 
-    <div class="div_post divRo" name="post" id="postPost">
-        <img style="float:right" src="images/close2.png" onclick="closeArticle()">
+    <div class="div_post divRo" name="post" id="full_post">
+        <p id="top"></p>
+        <img style="float:right" src="images/close2.png" onclick="close_article()">
         <div name="post" id="post" class="div_post_section">
-            <div id="top" class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
+            <div  class="title_post"><h1>Look at my tiny bonsai trees ! :)</h1></div>
             <div class="post_tag">
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Wholesome</button>
                 <button type="button" class="btn_tag btn_tag-primary btn_tag-lg">Nature</button>
@@ -279,7 +374,7 @@
                 <p>2 replies</p>
             </div>
         </div>
-        <div class="comment" onclick="redirection()">
+        <div class="comment" onclick="redirect()">
             <div class="title_comment">
                 <h3>Lorem Ipsum</h3>
             </div>
@@ -330,44 +425,54 @@
     </div>
     
         <div class="btn_position">
-            <button type="button" class="btn btn-primary btn-lg" onclick="openComment()">Comment</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="open_comment()">Comment</button>
             <button type="button" class="btn btn-primary btn-lg">Reactions</button>
             <button type="button" class="btn btn-primary btn-lg">Filter</button>
         </div>
     </div>
 </div>
 
-<div id="openComment" class="hidehide">
-    <a onclick="closeComment(); "><img style="float:right" src="images/close2.png"></a>
+<div id="open_comment" class="comment_hide">
+    <p id="comment"></p>
+    <a onclick="close_comment(); "><img style="float:right" src="images/close2.png"></a>
     <center>
         <h1>Comment : </h1>
     </center>
     <br>
-    <center><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea></center>
+    <center><textarea style="resize: none;height:300px;width: 800px;"class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        
     <br>
 
     <center>
-        <button class="reaction bas"></button>
-        <button class="reaction neutre"></button>
-        <button class="reaction haut"></button>
+        <button class="reaction good-reaction"></button>
+        <button class="reaction neutral-reaction"></button>
+        <button class="reaction bad-reaction"></button>
 
         <br>
-        <br>
-        <label for="image_uploads">Sélectionner des images à uploader (PNG, JPG)</label>
-        <br>
+        <button onclick="show_input_tag()" class="btn-upload">tag</button></center>
         <br>
         <div class="parent-div click">
-            <button class="btn-upload click">Choisir un fichier</button>
+            <button class="btn-upload click">Add a picture</button>
             <input type="file" name="upfile">
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button class="btn btn-primary btn-lg">Envoyer</button>
-        <br>
+
+        <br><br><br><br>
+        <button class="btn btn-primary btn-lg">Send</button>
+        <br><br>
+
+        <div  style="visibility: hidden; border:2px solid black;" class="div_tags"  id="tags">
+            <a onclick="hidden_input_tag();"><img style="float:right" src="images/close2.png"></a>
+            <div class="custom-search"></div>
+            <input class="form-control" type="text" placeholder="Default input" oninput="addTagOnList()" id="inputTag">
+            <div id="listTags">
+                <h3>This is the list of tags :</h3>
+        
+            </div>
+        </div>
     </center>
 </div>
+</body>
+
 
 
 
